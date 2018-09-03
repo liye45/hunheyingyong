@@ -1,0 +1,30 @@
+<!--<ng-content select="h3"></ng-content>
+<ul>
+    <li (click)="del(i)" *ngFor="let item of arr,let i=index">
+      {{item}}
+    </li>
+</ul>
+<ng-content select="footer"></ng-content>-->  
+<ul>
+  <h4>正在进行<span>{{arr.length-count}}</span></h4>
+  <ng-container>
+      <li *ngFor="let item of arr;let i = index;">
+          <div *ngIf="!item.done">
+            <input type="checkbox" (click)="change(i)"> {{item.title}}
+            <input type="button" value="删除"  (click)="del(i)">
+          </div>
+        </li>
+  </ng-container>
+</ul>
+<ul>
+  <h4>已经完成<span>{{count}}</span></h4>
+  <ng-container>
+      <li *ngFor="let item of arr;let i = index;">
+          <div *ngIf="item.done">
+            <input type="checkbox" (click)="change(i)" checked> {{item.title}}
+            <input type="button" value="删除"  (click)="del(i)">
+          </div>
+          
+        </li>
+  </ng-container>
+</ul>

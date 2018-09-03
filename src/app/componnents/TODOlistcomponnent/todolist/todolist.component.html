@@ -1,0 +1,24 @@
+
+  <h1>todoList</h1>
+  <input type="text" [(ngModel)]="todos" placeholder="请输入任务" (keydown)="getValue($event)" >
+  <h2>正在进行中  <span>{{arr1.length-counter}}</span> </h2>
+  <ul>
+    <ng-container *ngFor="let item of arr1;let j=index">
+    <li  *ngIf="!item.done" >
+        <input (click)="change(j)" type="checkbox" >
+        {{item.title}}
+        <button (click)="delete(j)">删除</button>
+    </li>
+    </ng-container>
+  </ul> 	
+  
+<h2>已经完成<span>{{counter}}</span></h2>
+<ul>
+    
+  <ng-container *ngFor="let item of arr1;let i=index">
+  <li *ngIf="item.done" >
+    <input checked type="checkbox" (click)="change(j)">
+    {{item.title}}
+  </li>
+  </ng-container>
+</ul>
