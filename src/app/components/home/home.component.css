@@ -1,0 +1,28 @@
+.all{
+    margin: 0 auto;
+    width: 1200px;
+}
+.left{
+    width:300;
+    text-align: center;
+    float: left;
+}
+.right{
+    width: 700px;
+    float: left;
+}
+ul li {
+    margin: 0 auto;
+    line-height: 50px;
+}
+#img{
+    
+    margin-left:10px;
+    width:188px;
+    height: 188px;
+}
+.right ul li{
+    margin: 0 40px;
+    line-height: 66px;
+    float: left;
+}

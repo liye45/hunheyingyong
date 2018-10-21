@@ -1,0 +1,45 @@
+*{
+    margin: 0 auto;
+}
+.dropdown{
+    width: 1200px;
+    margin: 0 auto;
+}
+.btn-group{
+    margin-left: 150px;
+    float: left;
+}
+
+#nav{
+    float: left;
+}
+#nav1{
+    float: left;
+}
+.container{
+    width:1200px;
+    margin-left: 100px;
+    float: left;
+}
+.container li{
+    width:297px;
+    height: 280px;
+    float: left;
+    border: 1px solid #C0C0C0;
+    margin-left: 16px;
+    margin-bottom: 15px
+}
+img{
+    width: 297px;
+    height: 150px;
+}
+p { 
+    width: 297px;
+    height: 60px;
+    word-wrap:break-word;
+    text-overflow:ellipsis;
+    overflow:hidden;
+ }
+ #detail{
+     font: #808080;
+ }

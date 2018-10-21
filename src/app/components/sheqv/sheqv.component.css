@@ -1,0 +1,39 @@
+.all{
+    margin: 0 auto;
+    width: 1200px;
+}
+.left{
+    float: left;
+    width: 800px;
+}
+img{
+    float: left;
+    width: 150px;
+    height: 88px;
+}
+#content{
+    float: left;
+    width: 650px;
+    height: 100px;
+}
+#foot{
+    width: 800px;
+    border-bottom: solid 4px #c0c0c0;
+    margin-bottom: 15px;
+}
+#foot{
+    font-family: #848482;
+}
+.right{
+    float: right;
+    width: 310px;
+    margin-left: 5px;
+}
+.right li{
+    margin-top: 13px;
+    
+}
+.btn-group{
+    margin-left: 150px;
+}
+

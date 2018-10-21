@@ -1,0 +1,41 @@
+<!-- <p>
+  tongbu works!
+</p>
+<h2>{{courseId}}</h2>
+<button (click)="go()">跳转到社区</button> -->
+<div class="container">
+    <ul>
+      <li *ngFor="let course of courses;">
+        <a [routerLink]="['/tongbu',course.id]">
+          <img src="{{course.images}}" alt="">
+          <h3>{{course.courseName}}</h3>
+       </a>
+        <div id="bot">
+            <!-- <span>任务：{{course.task}}</span>
+            <span>人数：{{course.person}}</span> -->
+            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>{{course.task}}
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>{{course.person}}
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <button id="button">+申请</button>
+        </div>
+      </li>
+    </ul>
+  
+  </div>
+  <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default">1</button>
+      <button type="button" class="btn btn-default">2</button>
+      <button type="button" class="btn btn-default">3</button>
+      <button type="button" class="btn btn-default">4</button>
+      <button type="button" class="btn btn-default">5</button>
+      <button type="button" class="btn btn-default">6</button>
+      <button type="button" class="btn btn-default">7</button>
+      <button type="button" class="btn btn-default">9</button>
+      <button type="button" class="btn btn-default">9</button>
+      <button type="button" class="btn btn-default">10</button>
+      <button type="button" class="btn btn-default">10</button>
+      <button type="button" class="btn btn-default">11</button>
+      <button type="button" class="btn btn-default">12</button>
+      <button type="button" class="btn btn-default">...</button>
+      <button type="button" class="btn btn-default">>></button>
+  </div>

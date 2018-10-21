@@ -1,0 +1,14 @@
+/* .list li{
+    float: left;
+} */
+.active{
+    font:bolder
+}
+#task1{
+    margin-top: 25px;
+    border: solid 1px #c0c0c0
+}
+#task2{
+    margin-top: 15px;
+    border: solid 1px #c0c0c0
+}

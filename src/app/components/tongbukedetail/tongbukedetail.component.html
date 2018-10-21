@@ -1,0 +1,37 @@
+<div class="container">
+  <h3><span class="glyphicon glyphicon-list-alt"  aria-hidden="true"></span>同步课{{course?.courseName}}</h3>
+  <ul class="nav nav-tabs">
+      <li role="presentation" ><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>简介</a></li>
+      <li role="presentation"><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>互动</a></li>
+      <li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>任务{{course?.task}}</a></li>
+      <li role="presentation"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>成员{{course?.person}}</a></li>
+  </ul>
+  <div>
+    <div id="task1">
+      <h3>任务二 -- js基础练习与应用</h3>
+      <p>刘冠军  发布于2018-09-30 16:35 </p>
+    </div>
+    <div id="task2">
+        <h3>任务一 -- 组建交互与服务</h3>
+        <p>刘冠军  发布于2018-09-21 16:35 </p>
+    </div>
+  </div>
+  <!-- <ul class="list">
+    <li [class.active]="flag">简介</li>
+    <li [ngClass]="{'active': true}">互动</li>
+    <li [style.color]="'red'">任务{{course?.task}}</li>
+    <li [ngStyle]="{'color': 'red'}"> 成员{{course?.person}}</li>
+  </ul> -->
+</div>
+<!-- <input type="radio" checked (change)="change($event)" value="1" name="num">11111
+<input type="radio" (change)="change($event)" value="2" name="num">22222
+<input type="radio" (change)="change($event)" value="3" name="num">33333
+<div [ngSwitch]="num">
+ <div *ngSwitchCase="1">1</div> 
+ <div *ngSwitchCase="2">2</div> 
+ <div *ngSwitchCase="3">3</div> 
+</div> -->
+
+<!-- <p> {jsonObject|json}}</p>
+<p>{{date|date:'y-MM-dd-E'}}</p> -->
+<!-- {{'hdhdhdh'|uppercase}} -->

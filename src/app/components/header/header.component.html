@@ -1,0 +1,63 @@
+<!-- <nav>
+<ul class="nav">
+  <li><a [routerLink]="['/home']"> 首页 </a></li>
+  <li><a [routerLink]="['/tongbu']"> 同步课 </a></li>
+  <li><a [routerLink]="['/course']"> 课程 </a></li>
+  <li><a [routerLink]="['/sheqv']" [queryParams]="{id:800,name:'ll'}"> 社区 </a></li>
+  <li>
+    <input type="text" class="sousuo" placeholder="搜索课程 问答">
+    <span><button id="but"></button></span>
+  </li>
+</ul>
+</nav> -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display  -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="#">Brand</a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li id="logo"><img src="images/logo.png" alt=""></li>
+        <li ><a [routerLink]="['/home']"> 首页 </a></li>
+        <li ><a [routerLink]="['/tongbu']"> 同步课 </a></li>
+        <li ><a [routerLink]="['/course']"> 课程 </a></li>
+        <li ><a [routerLink]="['/sheqv']" [queryParams]="{id:800,name:'ll'}"> 社区 </a></li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"aria-hidden="true" ></span></button>
+      </form>
+      <div id="tixing">
+        <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+      </div>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul> -->
+    </div>
+    <!-- // /.navbar-collapse  -->
+ </div>
+ <!-- /.container-fluid -->
+

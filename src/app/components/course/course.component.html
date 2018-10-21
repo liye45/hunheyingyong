@@ -1,0 +1,59 @@
+<div class="dropdown">
+  <div id="nav" >
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      课程分类
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <li><a href="#">一级分类</a></li>
+      <li><a href="#">WEB前端开发</a></li>
+      <li><a href="#">WEB后端开发</a></li>
+      <li><a href="#">移动应用开发</a></li>
+      <li><a href="#">软件测试</a></li>
+    </ul>
+  </div>
+  <div id="nav1">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        课程体系
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">计算机基础技能</a></li>
+        <li><a href="#">WEB前端工程师</a></li>
+        <li><a href="#">安卓开发工程师</a></li>
+        <li><a href="#">产品设计</a></li>
+      </ul>
+    </div>
+</div>
+<div class="container">
+    <ul>
+      <li *ngFor="let kecheng of kecheng;">
+        <a [routerLink]="['/course',kecheng.id]">
+          <img src="{{kecheng.images}}" alt="">
+          <h3>{{kecheng.kename}}</h3>
+        <div id="detail">
+            <p>{{kecheng.describe}}</p>
+            <span>课时 {{kecheng.time}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人数{{kecheng.person}}</span>
+        </div>
+      </a>
+      </li>
+    </ul>
+  
+  </div>
+  <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default">1</button>
+      <button type="button" class="btn btn-default">2</button>
+      <button type="button" class="btn btn-default">3</button>
+      <button type="button" class="btn btn-default">4</button>
+      <button type="button" class="btn btn-default">5</button>
+      <button type="button" class="btn btn-default">6</button>
+      <button type="button" class="btn btn-default">7</button>
+      <button type="button" class="btn btn-default">9</button>
+      <button type="button" class="btn btn-default">9</button>
+      <button type="button" class="btn btn-default">10</button>
+      <button type="button" class="btn btn-default">10</button>
+      <button type="button" class="btn btn-default">11</button>
+      <button type="button" class="btn btn-default">12</button>
+      <button type="button" class="btn btn-default">...</button>
+      <button type="button" class="btn btn-default">>></button>
+  </div>

@@ -1,0 +1,48 @@
+<div class="all">
+  <div class="left">
+  <ul>
+    <li *ngFor="let sheqv of sheqv">
+      <div id="img"><a [routerLink]="['/']" ><img src="{{sheqv.images}}" alt=""></a></div>
+      <div id="content">
+        <h5><a [routerLink]="['/']" >{{sheqv.shename}}</a></h5>
+        <p>{{sheqv.content}}</p>
+      </div>
+      <div id="foot">
+        <span> {{sheqv.writer}}&nbsp;&nbsp;{{sheqv.time}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;阅读{{sheqv.read}} &nbsp;&nbsp;评论{{sheqv.discuss}}</span>
+      </div>
+    </li>
+  </ul>
+  </div>
+  <div class="right">
+    <h4>热门话题</h4>
+    <ul>
+      <li><a href="#">#2015级程序设计基...#</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>6万</span></li>
+      <li><a href="#">#2015级面向对象程...#</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>3万</span></li>
+      <li><a href="#">#cms与模板制作#</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>3万</span></li>
+      <li><a href="#">#数据结构...#</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>3万</span></li>
+      <li><a href="#">#数据库原理（5，6...#</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2万</span></li>
+      <li><a href="#">#2014级PHP程序...#</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2万</span></li>
+      <li><a href="#">#WEB开发（二）20...#</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>3万</span></li>
+      <li><a href="#">#数据库系统概论...#</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>3万</span></li>
+      <li><a href="#">#WEB开发（二）20...#</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>3万</span></li>
+      <li><a href="#">#WEB开发（二）20...#</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>3万</span></li>
+    </ul>
+  </div>
+</div>
+<div class="btn-group" role="group" aria-label="...">
+    <button type="button" class="btn btn-default">1</button>
+    <button type="button" class="btn btn-default">2</button>
+    <button type="button" class="btn btn-default">3</button>
+    <button type="button" class="btn btn-default">4</button>
+    <button type="button" class="btn btn-default">5</button>
+    <button type="button" class="btn btn-default">6</button>
+    <button type="button" class="btn btn-default">7</button>
+    <button type="button" class="btn btn-default">9</button>
+    <button type="button" class="btn btn-default">9</button>
+    <button type="button" class="btn btn-default">10</button>
+    <button type="button" class="btn btn-default">10</button>
+    <button type="button" class="btn btn-default">11</button>
+    <button type="button" class="btn btn-default">12</button>
+    <button type="button" class="btn btn-default">...</button>
+    <button type="button" class="btn btn-default">>></button>
+</div>
